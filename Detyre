@@ -1,0 +1,64 @@
+ public void mbledh() {
+          vleraparaprake = vleraAktuale;
+          vleraAktuale = 0;
+          operatori = '+';
+  }
+  
+   public void zbrit() {
+   vleraparaprake = vleraAktuale;
+          vleraAktuale = 0;
+          operatori = '-';
+  }
+  
+   public void shumezo() {
+   vleraparaprake = vleraAktuale;
+          vleraAktuale = 0;
+          operatori = '*';
+  }
+  
+   public void pjesto() {
+   vleraparaprake = vleraAktuale;
+          vleraAktuale = 0;
+          operatori = '/';
+          
+   }
+   
+    public void llogarit() {
+           switch (operatori) {
+           case '+':
+                    vleraAktuale  = vleraParaprake + vleraAktuale;
+                    break;
+           case '-':
+                    vleraAktuale  = vleraParaprake - vleraAktuale;
+                    break;
+           case '*':
+                    vleraAktuale  = vleraParaprake * vleraAktuale;
+                    break;
+           case '/':
+                    vleraAktuale  = vleraParaprake / vleraAktuale;
+                    break;
+          default: {
+                 System.out.println("Gabim, jepni hyrjet!");
+          }
+          }
+          vleraParaprake = 0;
+          }
+          
+          public void pastro()  {
+                 vleraAktuale = 0;
+                 vleraParaprake =0;
+          }
+          public void akumulo(int x) {
+                 vleraAktuale = vleraAktuale * 10 + x;
+                   
+          }
+          
+          public int paraqit() {
+                 return vleraAktuale;
+                 
+           }
+           
+           public char operatori() {
+                  return opertori;
+            }
+}
